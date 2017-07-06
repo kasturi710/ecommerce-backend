@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="navheader.css">
+    <script src="client.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+
+
+        .price {
+            padding-top: 20px;
+            color: darkred;
+            font-size: x-large;
+
+        }
+        </style>
+
+</head>
+
+
+
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <div>
+            <span id="heading">READERS' ZONE</span>
+            <img src="icon.png" id="icon">
+        </div>
+        <p>Those who lose themselves in books, find themselves there too!</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="bookstore.html">Home</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li ><a href="itemlist.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style="  font-family: 'Times New Roman', Times, serif;">A Thousand Splendid Suns</div>
+                <div class="panel-body "><img src="thousand splendid suns.jpg" width="100%" height="300px"  alt="Image">
+                    <div class="text-center" style="font-size: x-large;color:darkred">₹300</div>
+                </div>
+                <div class="btn-success text-center addtocart" onclick="atc(this)" height="20px" style="font-size: 25px" >ADD TO CART</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style="font-family: 'Times New Roman', Times, serif;">A Walk to Remember</div>
+                <div class="panel-body"><img src="a walk to remember.jpg"  width="100%" height="300px"  alt="Image">
+                    <div class="text-center" style="font-size: x-large;color:darkred">₹260</div>
+                </div>
+                <div class="btn-success text-center addtocart"onclick="atc(this)" style="font-size: 25px">ADD TO CART</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style="font-family: 'Times New Roman', Times, serif;">Theory of Everything</div>
+                <div class="panel-body "><img src="theory%20of%20everything.jpg" width="100%" height="300px"  alt="Image">
+                <div class="text-center" style="font-size:x-large;color:darkred">₹460</div>
+                </div>
+
+                <div class="btn-success text-center addtocart" onclick="atc(this)" style="font-size: 25px" >ADD TO CART</div>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style="font-family: 'Times New Roman', Times, serif;">Ender's Game</div>
+                <div class="panel-body "><img src="ender's%20game.jpg" width="100%" height="300px"  alt="Image">
+                    <div class="text-center" style="font-size: x-large;color:darkred">₹540</div>
+                </div>
+                <div class="btn-success text-center addtocart" onclick="atc(this)" style="font-size: 25px" >ADD TO CART</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style=" font-family: 'Times New Roman', Times, serif;">Da Vinci Code</div>
+                <div class="panel-body "><img src="da%20vinci%20code.jpeg" width="100%" height="300px"   alt="Image">
+                    <div class="text-center" style="font-size: x-large;color:darkred">₹400</div>
+                </div>
+                <div class="btn-success text-center addtocart" onclick="atc(this)" style="font-size: 25px">ADD TO CART</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading" style="font-family: 'Times New Roman', Times, serif;">Angels and Demons</div>
+                <div class="panel-body "><img src="angels%20and%20demons.jpg" width="100%" height="300px"  alt="Image">
+                    <div class="text-center" style="font-size: x-large;color:darkred">₹300</div>
+                </div>
+                <div class="btn-success addtocart "onclick="atc(this)" style="font-size: 25px;" >ADD TO CART</div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>your cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="navheader.css">
+    <script src="client.js"></script>
+
+    <style>
+
+        .price {
+            padding-top: 20px;
+            color: darkred;
+            font-size: x-large;
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container text-center">
+        <div>
+            <span id="heading">READERS' ZONE</span>
+            <img src="icon.png" id="icon">
+        </div>
+        <p>Those who lose themselves in books, find themselves there too!</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li class="active"><a href="itemlist.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div align="center" style="background-color:navajowhite;font-family:'Times New Roman', Times, serif;font-size:50px;margin-bottom: 20px;">YOUR CART</div>-->
+<div style="margin-left: 20%;margin-right: 20%">
+<table class="table table-striped ">
+    <thead>
+    <tr>
+        <th style="font-size: x-large">BOOK NAME</th>
+        <th style="font-size: x-large">QUANTITY</th>
+        <th style="font-size: x-large">PRICE</th>
+    </tr>
+    </thead>
+    <tbody id="mytable">
+    </tbody>
+</table>
+</div>
+<div id="tp" style="font-size: x-large;margin-left:60% ">
+</div>
+
+
+<!--<div class="col-md-offset-5 col-lg-offset-5 col-xs-offset-5 col-sm-offset-5 col-md-2 col-sm-2 col-lg-2 col-xs-2 col-sm-offset-right-5 col-lg-offset-right-5 col-xs-offset-right-5 col-md-offset-right-5">-->
+<div class="btn-danger text-center btn-lg " style="margin-top: 40px;margin-right:40%;margin-left: 40%;margin-bottom: 40px ">PROCEED TO PAY</div>
+</div>
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+
+
+</body>
+</html>
